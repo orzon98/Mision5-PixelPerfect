@@ -7,7 +7,7 @@ export default function ThemeToggle() {
     <button
       onClick={alternar}
       aria-label="Cambiar tema"
-      className="size-11 cursor-pointer rounded-full border border-border transition hover:bg-panel focus-visible:ring-2 focus-visible:ring-accent-2 focus-visible:outline-hidden"
+      className="size-11 rounded-full border border-border hover:bg-panel"
     >
       <span className="dark:hidden">🌙</span>
       <span className="hidden dark:inline">☀️</span>
