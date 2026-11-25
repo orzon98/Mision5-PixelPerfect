@@ -1,23 +1,52 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 
+/* CLARO */
 @theme {
-  /* Claro */
-  --color-fondo: #f6f7fb;
+  --color-bg: #f6f7fb;
   --color-panel: #ffffff;
-  --color-borde: #dfe3ee;
-  --color-texto: #12151f;
-  --color-apagado: #5b6274;
+  --color-border: #dfe3ee;
+  --color-text: #12151f;
+  --color-muted: #5b6274;
+  --color-accent: #4066f5;
+  --color-accent-2: #2f4fd6; /* texto y enlaces: más oscuro para contrastar */
 
-  /* Oscuro (los de Kinisi) */
-  --color-fondo-noche: #0a0d14;
-  --color-panel-noche: #12151f;
-  --color-borde-noche: #242938;
-  --color-texto-noche: #e9ebf1;
-  --color-apagado-noche: #8890a3;
+  /* Tipografía, forma y ritmo */
+  --font-display: "Space Grotesk", system-ui, sans-serif;
+  --radius-card: 1.25rem;
+  --spacing-seccion: 5rem;
 
-  /* Marca (igual en ambos) */
-  --color-acento: #4066f5;
-  --color-acento-claro: #7c98ff;
-  --color-acento-fg: #ffffff;
+  /* BONUS: animación de entrada registrada como utilidad (animate-aparecer) */
+  --animate-aparecer: aparecer 0.7s ease-out both;
+
+  @keyframes aparecer {
+    from {
+      opacity: 0;
+      transform: translateY(1.25rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* OSCURO (los de Kinisi) */
+.dark {
+  --color-bg: #0a0d14;
+  --color-panel: #12151f;
+  --color-border: #242938;
+  --color-text: #e9ebf1;
+  --color-muted: #8890a3;
+  --color-accent: #4066f5;
+  --color-accent-2: #7c98ff; /* texto y enlaces: más claro para contrastar */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
 }

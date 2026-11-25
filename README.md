@@ -1,16 +1,14 @@
-# React + Vite
+# Misión 5 - Programación web
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Maqueta una landing page real (de un producto inventado o de tu proyecto) con Tailwind CSS v4: responsive de móvil a escritorio, modo oscuro y un sistema de diseño coherente con @theme.
+Landing de **Kinisi**, mi app de entrenamiento con planes generados por IA a partir de una biblioteca de artículos de profesionales.
 
-Currently, two official plugins are available:
+## Uso de IA
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Dos prompts reales que me ayudaron a entender el funcionamiento de algunas funciones.
 
-## React Compiler
+- `ayudame a maquetar la pagina`: me ayudo a tener una estructura para verlo mucho mas claro para poder dar estilos a partir de ahi
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Autopsia
+- He hecho la landing page de un proyecto que tengo, asi que los colores los he cogido del proyecto y la landing page esta ambientada en la aplicación principal.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
