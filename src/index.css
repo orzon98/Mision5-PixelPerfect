@@ -1,0 +1,23 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Claro */
+  --color-fondo: #f6f7fb;
+  --color-panel: #ffffff;
+  --color-borde: #dfe3ee;
+  --color-texto: #12151f;
+  --color-apagado: #5b6274;
+
+  /* Oscuro (los de Kinisi) */
+  --color-fondo-noche: #0a0d14;
+  --color-panel-noche: #12151f;
+  --color-borde-noche: #242938;
+  --color-texto-noche: #e9ebf1;
+  --color-apagado-noche: #8890a3;
+
+  /* Marca (igual en ambos) */
+  --color-acento: #4066f5;
+  --color-acento-claro: #7c98ff;
+  --color-acento-fg: #ffffff;
+}
